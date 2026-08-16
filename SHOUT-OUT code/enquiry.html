@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOUT OUT — Enquiry | Luxury Cybersecurity</title>
+    <meta name="description" content="Submit your enquiry to SHOUT OUT for premium family cybersecurity solutions. Get in touch with our experts.">
+    <meta name="keywords" content="cybersecurity enquiry, family security enquiry, cybersecurity consultation, SHOUT OUT contact">
+    <meta property="og:title" content="SHOUT OUT — Enquiry">
+    <meta property="og:description" content="Submit your enquiry for premium cybersecurity solutions from SHOUT OUT.">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header" role="banner">
+        <div class="container header-container">
+            <div class="logo-wrapper">
+                <a href="index.html" class="logo-link" aria-label="SHOUT OUT Home">
+                    <span class="logo-wordmark">SHOUT OUT</span>
+                    <span class="logo-tagline">SIC PARVIS MAGNA</span>
+                </a>
+            </div>
+            
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="products.html" class="nav-link">Products &amp; Services</a></li>
+                    <li><a href="enquiry.html" class="nav-link active">Enquiry</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Hero -->
+        <section class="page-hero" aria-labelledby="page-hero-heading">
+            <div class="container">
+                <span class="page-hero-tagline">Get Started</span>
+                <h1 id="page-hero-heading" class="page-hero-heading">Submit an Enquiry</h1>
+                <p class="page-hero-text">Tell us about your family's cybersecurity needs and we'll help you find the perfect protection solution.</p>
+            </div>
+        </section>
+
+        <!-- Enquiry Form -->
+        <section class="enquiry-section" aria-labelledby="enquiry-heading">
+            <div class="container">
+                <div class="enquiry-wrapper">
+                    <div class="enquiry-intro">
+                        <h2 id="enquiry-heading" class="section-heading">Let's Start Your Protection Journey</h2>
+                        <p>Complete the form below and one of our cybersecurity consultants will be in touch within 24 hours to discuss your family's digital security needs.</p>
+                        <p class="form-note">All fields marked with <span aria-hidden="true">*</span> are required.</p>
+                    </div>
+
+                    <form id="enquiryForm" class="enquiry-form" novalidate>
+                        <!-- Full Name -->
+                        <div class="form-group">
+                            <label for="fullName">Full Name <span aria-hidden="true">*</span></label>
+                            <input type="text" id="fullName" name="fullName" placeholder="e.g., John Smith" required aria-required="true">
+                            <span class="form-error" id="fullNameError"></span>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="form-group">
+                            <label for="email">Email Address <span aria-hidden="true">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="e.g., john@example.com" required aria-required="true">
+                            <span class="form-error" id="emailError"></span>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="form-group">
+                            <label for="phone">Phone Number <span aria-hidden="true">*</span></label>
+                            <input type="tel" id="phone" name="phone" placeholder="e.g., 082 123 4567" required aria-required="true">
+                            <span class="form-error" id="phoneError"></span>
+                        </div>
+
+                        <!-- Preferred Branch -->
+                        <div class="form-group">
+                            <label for="branch">Preferred Branch <span aria-hidden="true">*</span></label>
+                            <select id="branch" name="branch" required aria-required="true">
+                                <option value="">Select a branch</option>
+                                <option value="sandton">Sandton</option>
+                                <option value="zwartkop">Zwartkop</option>
+                                <option value="midstream">Midstream</option>
+                            </select>
+                            <span class="form-error" id="branchError"></span>
+                        </div>
+
+                        <!-- Product/Service -->
+                        <div class="form-group">
+                            <label for="productService">Product / Service of Interest <span aria-hidden="true">*</span></label>
+                            <select id="productService" name="productService" required aria-required="true">
+                                <option value="">Select a product or service</option>
+                                <option value="family-shield">SHOUT OUT Family Shield</option>
+                                <option value="home-secure">SHOUT OUT Home Secure</option>
+                                <option value="private">SHOUT OUT Private</option>
+                                <option value="complete">SHOUT OUT Complete</option>
+                                <option value="assessment">Cybersecurity Assessment</option>
+                                <option value="consultation">Security Consultation</option>
+                                <option value="other">Other / Not sure</option>
+                            </select>
+                            <span class="form-error" id="productServiceError"></span>
+                        </div>
+
+                        <!-- Number of Devices -->
+                        <div class="form-group">
+                            <label for="devices">Number of Devices in Household</label>
+                            <select id="devices" name="devices">
+                                <option value="">Select number of devices</option>
+                                <option value="1-5">1–5</option>
+                                <option value="6-10">6–10</option>
+                                <option value="11-20">11–20</option>
+                                <option value="20+">More than 20</option>
+                            </select>
+                        </div>
+
+                        <!-- Preferred Contact Method -->
+                        <div class="form-group">
+                            <label for="contactMethod">Preferred Contact Method <span aria-hidden="true">*</span></label>
+                            <select id="contactMethod" name="contactMethod" required aria-required="true">
+                                <option value="">Select preferred method</option>
+                                <option value="email">Email</option>
+                                <option value="phone">Phone</option>
+                                <option value="whatsapp">WhatsApp</option>
+                            </select>
+                            <span class="form-error" id="contactMethodError"></span>
+                        </div>
+
+                        <!-- Message -->
+                        <div class="form-group">
+                            <label for="message">Message <span aria-hidden="true">*</span></label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your family's cybersecurity needs and any specific concerns..." required aria-required="true" minlength="10"></textarea>
+                            <span class="form-error" id="messageError"></span>
+                            <span class="form-helper" id="messageCount">0 / 500 characters</span>
+                        </div>
+
+                        <!-- Consent -->
+                        <div class="form-group consent-group">
+                            <label class="consent-label">
+                                <input type="checkbox" id="consent" name="consent" required aria-required="true">
+                                <span class="consent-text">I consent to SHOUT OUT contacting me about my enquiry and storing my information for this purpose. <span aria-hidden="true">*</span></span>
+                            </label>
+                            <span class="form-error" id="consentError"></span>
+                        </div>
+
+                        <!-- Submit -->
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Submit Enquiry</button>
+                        </div>
+
+                        <!-- Success Message -->
+                        <div class="form-success" id="formSuccess" role="alert" hidden>
+                            <div class="success-icon" aria-hidden="true">✓</div>
+                            <h3>Thank You for Your Enquiry</h3>
+                            <p>Your message has been received. A SHOUT OUT cybersecurity consultant will contact you within 24 hours to discuss your protection needs.</p>
+                            <p class="success-disclaimer"><strong>Note:</strong> This is a demonstration form for an academic project. No real data is stored or processed.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <span class="footer-logo">SHOUT OUT</span>
+                <span class="footer-tagline">SIC PARVIS MAGNA</span>
+                <p class="footer-description">Premium cybersecurity solutions for South African families.</p>
+            </div>
+            
+            <div class="footer-nav">
+                <h4 class="footer-heading">Navigation</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products &amp; Services</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-locations">
+                <h4 class="footer-heading">Our Locations</h4>
+                <ul class="footer-links">
+                    <li><a href="contact.html#sandton">Sandton</a></li>
+                    <li><a href="contact.html#zwartkop">Zwartkop</a></li>
+                    <li><a href="contact.html#midstream">Midstream</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h4 class="footer-heading">Contact</h4>
+                <ul class="footer-links">
+                    <li><a href="mailto:info@shoutout.co.za">info@shoutout.co.za</a></li>
+                    <li><a href="tel:+27111234567">+27 11 123 4567</a></li>
+                </ul>
+                <div class="footer-social" aria-label="Social media links">
+                    <a href="#" aria-label="Facebook" class="social-link">f</a>
+                    <a href="#" aria-label="Instagram" class="social-link">i</a>
+                    <a href="#" aria-label="LinkedIn" class="social-link">l</a>
+                    <a href="#" aria-label="Twitter" class="social-link">t</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="footer-copy">&copy; 2026 SHOUT OUT. Academic project concept. SHOUT OUT is a fictional organisation created for academic purposes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>
